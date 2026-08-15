@@ -457,55 +457,100 @@ p, h1, h2, h3 { margin: 0; }
 }
 
 .athletes-illustration:hover {
-  animation: athletes-glitch-hover 0.5s steps(1, end) infinite;
-  will-change: transform, filter, opacity;
+  animation: athletes-glitch-hover 1.1s steps(1, end) infinite;
+  will-change: transform, filter, clip-path;
 }
 
 @keyframes athletes-glitch-hover {
   0%, 100% {
-    transform: translate(2px, -1px) skewX(-2deg);
-    filter: hue-rotate(15deg) contrast(1.3) brightness(1.1);
-    opacity: 1;
+    transform: translate(0, 0);
+    filter: none;
+    clip-path: inset(0 0 0 0);
   }
-  10% {
-    transform: translate(-3px, 1px) skewX(3deg);
-    filter: hue-rotate(-20deg) contrast(1.5) brightness(0.9);
+  4% {
+    transform: translate(-6px, 0);
+    filter: drop-shadow(4px 0 0 #00e5ff) drop-shadow(-4px 0 0 #ff003c);
+    clip-path: inset(10% 0 62% 0);
+  }
+  8% {
+    transform: translate(5px, 0);
+    filter: drop-shadow(-5px 0 0 #00e5ff) drop-shadow(5px 0 0 #ff003c);
+    clip-path: inset(68% 0 6% 0);
+  }
+  12% {
+    transform: translate(0, 0);
+    filter: none;
+    clip-path: inset(0 0 0 0);
+  }
+  16% {
+    transform: translate(-3px, 1px);
+    filter: drop-shadow(3px 0 0 #00e5ff) drop-shadow(-3px 0 0 #ff003c) brightness(1.5) contrast(1.3);
+    clip-path: inset(30% 0 42% 0);
   }
   20% {
-    transform: translate(3px, 0) skewX(0deg);
-    filter: none;
-    opacity: 0.9;
+    transform: translate(4px, -1px);
+    filter: drop-shadow(-3px 0 0 #00e5ff) drop-shadow(3px 0 0 #ff003c);
+    clip-path: inset(45% 0 20% 0);
   }
-  30% {
-    transform: translate(-4px, 2px) skewX(-4deg);
-    filter: hue-rotate(25deg) contrast(1.4);
+  24% {
+    transform: translate(0, 10px);
+    filter: brightness(0.6);
+    clip-path: inset(0 0 0 0);
+  }
+  28% {
+    transform: translate(0, 0);
+    filter: none;
+    clip-path: inset(0 0 0 0);
+  }
+  36% {
+    transform: translate(-7px, 0);
+    filter: drop-shadow(5px 0 0 #00e5ff) drop-shadow(-5px 0 0 #ff003c);
+    clip-path: inset(5% 0 70% 0);
   }
   40% {
-    transform: translate(2px, -2px) skewX(2deg);
-    filter: hue-rotate(-15deg) contrast(1.2) brightness(1.05);
-    opacity: 1;
+    transform: translate(6px, 0);
+    filter: drop-shadow(-4px 0 0 #00e5ff) drop-shadow(4px 0 0 #ff003c);
+    clip-path: inset(74% 0 3% 0);
   }
-  50% {
-    transform: translate(-2px, 0) skewX(0deg);
+  44% {
+    transform: translate(0, 0);
     filter: none;
+    clip-path: inset(0 0 0 0);
+  }
+  56% {
+    transform: translate(-4px, 2px);
+    filter: drop-shadow(3px 0 0 #00e5ff) drop-shadow(-3px 0 0 #ff003c) brightness(1.3);
+    clip-path: inset(22% 0 48% 0);
   }
   60% {
-    transform: translate(4px, 1px) skewX(-3deg);
-    filter: hue-rotate(30deg) contrast(1.6) brightness(0.95);
+    transform: translate(0, 0);
+    filter: none;
+    clip-path: inset(0 0 0 0);
   }
-  70% {
-    transform: translate(-3px, -1px) skewX(3deg);
-    filter: hue-rotate(-25deg) contrast(1.3);
-    opacity: 0.92;
+  72% {
+    transform: translate(5px, -2px);
+    filter: drop-shadow(-4px 0 0 #00e5ff) drop-shadow(4px 0 0 #ff003c);
+    clip-path: inset(55% 0 15% 0);
+  }
+  76% {
+    transform: translate(-5px, 0);
+    filter: drop-shadow(4px 0 0 #00e5ff) drop-shadow(-4px 0 0 #ff003c);
+    clip-path: inset(15% 0 55% 0);
   }
   80% {
-    transform: translate(2px, 2px) skewX(0deg);
+    transform: translate(0, 0);
     filter: none;
-    opacity: 1;
+    clip-path: inset(0 0 0 0);
   }
   90% {
-    transform: translate(-3px, -1px) skewX(-2deg);
-    filter: hue-rotate(18deg) contrast(1.4);
+    transform: translate(3px, 1px);
+    filter: drop-shadow(2px 0 0 #00e5ff) drop-shadow(-2px 0 0 #ff003c) brightness(1.4);
+    clip-path: inset(38% 0 32% 0);
+  }
+  94% {
+    transform: translate(0, 0);
+    filter: none;
+    clip-path: inset(0 0 0 0);
   }
 }
 
