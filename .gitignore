@@ -1,0 +1,9 @@
+# Local dev tooling (not part of the deployed site)
+.claude/
+serve.ps1
+
+# Superseded by the optimized Athlete Image.jpg (unused, 12MB dead weight)
+Athlete Image.png
+
+# Superseded by hero-bg-2x.webp (unused)
+assets/hero-bg.png
